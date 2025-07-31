@@ -75,7 +75,7 @@ section {
 .main-button {
     display: inline-block;
     margin-bottom: 12px;
-    padding: 0.4em 1.6em;
+    padding: 0.4em 4em;
     text-decoration: none;
     color: white;
     background-color: blue;
@@ -88,4 +88,11 @@ section {
 .main-button:hover {
     background-color: darkblue;
     transform: scale(1.1);
+}
+
+.social-icons a {
+    color: white;
+    padding-right: 52px;
+    font-size: 1em;
+    font-weight: 500;
 }
