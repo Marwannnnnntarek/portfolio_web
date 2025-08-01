@@ -6,7 +6,7 @@
     scroll-behavior: smooth;
 }
 
-/* Header */
+/* --------------------Header-------------------- */
 header {
     align-items: center;
     background-color: whitesmoke;
@@ -38,17 +38,15 @@ header {
     color: #601cfc;
 }
 
-/* Section base */
+/* --------------------main section-------------------- */
 section {
     width: 100%;
 }
 
-/* Main Hero Section */
 .main {
     min-height: 100vh;
     color: white;
-    background-color: #0e0e0e;
-    /* deep black */
+    background-color: black;
     display: flex;
     align-items: center;
     padding-left: 140px;
@@ -91,14 +89,20 @@ section {
     transform: scale(1.1);
 }
 
-.social-icons a {
+.main .social-icons a {
     color: white;
-    padding-right: 44px;
+    padding-right: 32px;
     font-size: 1em;
     font-weight: 500;
+    transition: 0.3s;
 }
 
-/* Services Section */
+.main .social-icons i:hover {
+    color: #601cfc;
+    transform: scale(1.2);
+}
+
+/* --------------------Services Section-------------------- */
 .services {
     background-color: white;
     min-height: 100vh;
@@ -113,12 +117,13 @@ section {
     display: flex;
     justify-content: center;
     color: steelblue;
-    font-weight: 700;
-    font-size: 2em;
+    font-weight: 900;
+    font-size: 3em;
     margin-bottom: 30px;
 }
 
 .services .content {
+
     display: flex;
     justify-content: center;
     flex-direction: row;
@@ -127,7 +132,8 @@ section {
 
 .services .card {
     background-color: white;
-    width: 28em;
+    width: 20%;
+
     box-shadow: 0 5px 25px rgba(1, 1, 1, 0.40);
     border-radius: 12px;
     padding: 20px;
@@ -164,7 +170,7 @@ section {
     color: black;
 }
 
-/* Projects Section */
+/* --------------------Projects Section-------------------- */
 .projects {
     background-color: black;
     min-height: 100vh;
@@ -179,8 +185,8 @@ section {
     display: flex;
     justify-content: center;
     color: steelblue;
-    font-weight: 700;
-    font-size: 2em;
+    font-weight: 900;
+    font-size: 3em;
     margin-bottom: 30px;
 }
 
@@ -192,7 +198,7 @@ section {
 }
 
 .projects .card {
-    background-color: white;
+    background-color: whitesmoke;
     width: 80%;
     box-shadow: 0 5px 25px rgba(1, 1, 1, 0.40);
     border-radius: 12px;
@@ -224,6 +230,7 @@ section {
 }
 
 .projects .card p {
+
     margin-top: 10px;
     font-size: 1em;
     font-weight: 500;
@@ -239,7 +246,7 @@ section {
 }
 
 .projects .images img {
-    width: 100px;
+    width: 160px;
     height: auto;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -250,7 +257,7 @@ section {
     transform: scale(1.05);
 }
 
-/* contact section */
+/* --------------------contact section-------------------- */
 .contact {
     background-color: white;
     min-height: 100vh;
@@ -265,8 +272,8 @@ section {
     display: flex;
     justify-content: center;
     color: steelblue;
-    font-weight: 700;
-    font-size: 2em;
+    font-weight: 900;
+    font-size: 3em;
     margin-bottom: 30px;
 }
 
@@ -297,4 +304,36 @@ section {
     font-size: 8em;
     color: steelblue;
     padding-bottom: 12px;
+}
+
+/* --------------------footer-------------------- */
+footer {
+    color: white;
+    background-color: black;
+    width: 100%;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 8px;
+    align-items: center;
+
+}
+
+footer h1 {
+    font-size: 1em;
+    font-weight: 300;
+}
+
+footer span {
+    color: steelblue;
+}
+
+footer .social-icons a {
+    color: white;
+    transition: 0.3s;
+}
+
+footer .social-icons i:hover {
+    color: #601cfc;
+    transform: scale(1.2);
 }
