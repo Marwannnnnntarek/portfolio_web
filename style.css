@@ -1,5 +1,4 @@
 * {
-
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
@@ -7,6 +6,7 @@
     scroll-behavior: smooth;
 }
 
+/* Header */
 header {
     align-items: center;
     background-color: whitesmoke;
@@ -38,14 +38,17 @@ header {
     color: #601cfc;
 }
 
+/* Section base */
 section {
     width: 100%;
 }
 
+/* Main Hero Section */
 .main {
     min-height: 100vh;
     color: white;
-    background-color: black;
+    background-color: #0e0e0e;
+    /* deep black */
     display: flex;
     align-items: center;
     padding-left: 140px;
@@ -95,13 +98,18 @@ section {
     font-weight: 500;
 }
 
-.cards {
+/* Services Section */
+.services {
+    background-color: white;
     min-height: 100vh;
-    padding: 100px 0;
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
-
-.title {
+.services .title {
     display: flex;
     justify-content: center;
     color: steelblue;
@@ -110,14 +118,14 @@ section {
     margin-bottom: 30px;
 }
 
-.content {
+.services .content {
     display: flex;
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
 }
 
-.card {
+.services .card {
     background-color: white;
     width: 28em;
     box-shadow: 0 5px 25px rgba(1, 1, 1, 0.40);
@@ -127,11 +135,11 @@ section {
     transition: 0.7s ease;
 }
 
-.card:hover {
+.services .card:hover {
     transform: scale(1.1);
 }
 
-.icon {
+.services .icon {
     display: flex;
     justify-content: center;
     font-size: 8em;
@@ -139,19 +147,154 @@ section {
     padding-bottom: 12px;
 }
 
-.information {
+.services .info {
     text-align: center;
 }
 
-.information h2 {
+.services .info h2 {
     font-weight: 700;
     font-size: 2em;
     color: steelblue;
     padding-bottom: 12px;
 }
 
-.information p {
+.services .info p {
     font-size: 1em;
     font-weight: 500;
     color: black;
+}
+
+/* Projects Section */
+.projects {
+    background-color: black;
+    min-height: 100vh;
+    padding: 80px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.projects .title {
+    display: flex;
+    justify-content: center;
+    color: steelblue;
+    font-weight: 700;
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+.projects .content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.projects .card {
+    background-color: white;
+    width: 80%;
+    box-shadow: 0 5px 25px rgba(1, 1, 1, 0.40);
+    border-radius: 12px;
+    padding: 20px;
+    margin: 16px;
+}
+
+.projects .header {
+    display: flex;
+    align-items: center;
+}
+
+.projects .header h2 {
+    font-size: 1.5em;
+    color: steelblue;
+    margin: 0;
+}
+
+.projects .header i {
+    color: steelblue;
+    font-size: 1.2em;
+    margin-left: 12px;
+    transition: 0.3s;
+}
+
+.projects .header i:hover {
+    color: #601cfc;
+    transform: scale(1.2);
+}
+
+.projects .card p {
+    margin-top: 10px;
+    font-size: 1em;
+    font-weight: 500;
+    color: black;
+}
+
+.projects .images {
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+}
+
+.projects .images img {
+    width: 100px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.projects .images img:hover {
+    transform: scale(1.05);
+}
+
+/* contact section */
+.contact {
+    background-color: white;
+    min-height: 100vh;
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.contact .title {
+    display: flex;
+    justify-content: center;
+    color: steelblue;
+    font-weight: 700;
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+.contact .content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.contact .card {
+    background-color: white;
+    width: 28em;
+    box-shadow: 0 5px 25px rgba(1, 1, 1, 0.40);
+    border-radius: 12px;
+    padding: 20px;
+    margin: 16px;
+    transition: 0.7s ease;
+}
+
+.contact .card:hover {
+    transform: scale(1.1);
+}
+
+.contact .icon {
+    display: flex;
+    justify-content: center;
+    font-size: 8em;
+    color: steelblue;
+    padding-bottom: 12px;
 }
