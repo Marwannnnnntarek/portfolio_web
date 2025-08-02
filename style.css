@@ -337,3 +337,77 @@ footer .social-icons i:hover {
     color: #601cfc;
     transform: scale(1.2);
 }
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 12px 20px;
+    }
+
+    .navigation {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-top: 10px;
+    }
+
+    .main {
+        flex-direction: column;
+        padding: 100px 20px 20px;
+        text-align: center;
+    }
+
+    .main h1,
+    .main h2 {
+        font-size: 1.2em;
+    }
+
+    .main h1 span {
+        font-size: 1.5em;
+    }
+
+    .main-button {
+        padding: 0.5em 2em;
+        font-size: 1em;
+    }
+
+    .main .social-icons {
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .services .content,
+    .projects .content,
+    .contact .content {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 16px;
+    }
+
+    .services .card,
+    .projects .card,
+    .contact .card {
+        width: 90%;
+        margin: 12px 0;
+    }
+
+    .projects .images {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .projects .images img {
+        width: 80%;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 12px;
+    }
+
+    footer h1 {
+        font-size: 0.9em;
+    }
+}
