@@ -230,7 +230,7 @@ section {
 }
 
 .projects .card p {
-
+    text-align: left;
     margin-top: 10px;
     font-size: 1em;
     font-weight: 500;
