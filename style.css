@@ -9,29 +9,29 @@
 /* --------------------Header-------------------- */
 header {
     align-items: center;
-    background-color: whitesmoke;
+    background-color: #f8f8f8;
     position: fixed;
     width: 100%;
     z-index: 999;
     display: flex;
     justify-content: space-between;
-    padding: 8px 140px;
+    padding: 12px 8%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
 .logo {
     text-decoration: none;
-    color: steelblue;
+    color: #1e3a8a;
     font-weight: 700;
-    text-transform: uppercase;
     font-size: 2em;
 }
 
 .navigation a {
     text-decoration: none;
-    color: steelblue;
+    color: #1e3a8a;
     font-weight: 500;
-    font-size: 1em;
-    padding-left: 12px;
+    margin-left: 20px;
+    transition: 0.3s;
 }
 
 .navigation a:hover {
@@ -39,188 +39,160 @@ header {
 }
 
 /* --------------------main section-------------------- */
-section {
-    width: 100%;
-}
-
 .main {
     min-height: 100vh;
+    background-color: #111;
     color: white;
-    background-color: black;
     display: flex;
     align-items: center;
-    padding-left: 140px;
+    padding: 0 8%;
 }
 
 .main h1 {
-    font-size: 1em;
+    font-size: 1.2em;
     font-weight: 500;
 }
 
 .main h1 span {
     display: inline-block;
     margin: 12px 0;
-    font-size: 2em;
+    font-size: 2.5em;
     font-weight: 700;
-    color: steelblue;
+    color: #1e3a8a;
 }
 
 .main h2 {
-    margin-bottom: 12px;
-    font-size: 2em;
-    font-weight: 700;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+    font-weight: 600;
 }
 
 .main-button {
     display: inline-block;
-    margin-bottom: 12px;
-    padding: 0.4em 4em;
-    text-decoration: none;
+    margin-bottom: 20px;
+    padding: 0.6em 3em;
+    background-color: #1e3a8a;
     color: white;
-    background-color: blue;
+    border-radius: 10px;
     font-size: 1em;
-    font-weight: 500;
-    border-radius: 8px;
-    transition: 0.7s ease;
+    transition: all 0.3s ease;
+    text-decoration: none;
 }
 
 .main-button:hover {
-    background-color: darkblue;
-    transform: scale(1.1);
+    background-color: #162e6a;
+    transform: scale(1.05);
 }
 
 .main .social-icons a {
     color: white;
-    padding-right: 32px;
-    font-size: 1em;
-    font-weight: 500;
+    font-size: 1.2em;
+    margin-right: 20px;
     transition: 0.3s;
 }
 
-.main .social-icons i:hover {
+.main .social-icons a:hover {
     color: #601cfc;
     transform: scale(1.2);
 }
 
 /* --------------------Services Section-------------------- */
 .services {
-    background-color: white;
-    min-height: 100vh;
-    padding: 40px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-color: #fefefe;
+    padding: 80px 0;
     text-align: center;
 }
 
 .services .title {
-    display: flex;
-    justify-content: center;
-    color: steelblue;
-    font-weight: 900;
     font-size: 3em;
-    margin-bottom: 30px;
+    color: #1e3a8a;
+    font-weight: 800;
+    margin-bottom: 40px;
 }
 
 .services .content {
-
     display: flex;
     justify-content: center;
-    flex-direction: row;
     flex-wrap: wrap;
+    gap: 24px;
 }
 
 .services .card {
-    background-color: white;
-    width: 20em;
-
-    box-shadow: 0 5px 25px rgba(1, 1, 1, 0.40);
+    background: #fff;
+    width: 300px;
+    padding: 24px;
     border-radius: 12px;
-    padding: 20px;
-    margin: 16px;
-    transition: 0.7s ease;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    transition: 0.4s;
 }
 
 .services .card:hover {
-    transform: scale(1.1);
+    transform: translateY(-10px);
 }
 
 .services .icon {
-    display: flex;
-    justify-content: center;
-    font-size: 8em;
-    color: steelblue;
-    padding-bottom: 12px;
-}
-
-.services .info {
-    text-align: center;
+    font-size: 4em;
+    color: #1e3a8a;
+    margin-bottom: 12px;
 }
 
 .services .info h2 {
-    font-weight: 700;
-    font-size: 2em;
-    color: steelblue;
-    padding-bottom: 12px;
+    font-size: 1.5em;
+    color: #1e3a8a;
+    margin-bottom: 12px;
 }
 
 .services .info p {
     font-size: 1em;
-    font-weight: 500;
-    color: black;
+    color: #444;
 }
 
 /* --------------------Projects Section-------------------- */
 .projects {
-    background-color: black;
-    min-height: 100vh;
+    background-color: #111;
     padding: 80px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    color: white;
     text-align: center;
 }
 
 .projects .title {
-    display: flex;
-    justify-content: center;
-    color: steelblue;
-    font-weight: 900;
     font-size: 3em;
-    margin-bottom: 30px;
+    color: #1e3a8a;
+    font-weight: 800;
+    margin-bottom: 40px;
 }
 
 .projects .content {
     display: flex;
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 32px;
+    align-items: center;
 }
 
 .projects .card {
-    background-color: whitesmoke;
-    width: 80%;
-    box-shadow: 0 5px 25px rgba(1, 1, 1, 0.40);
+    background: #fff;
+    width: 90%;
+    padding: 24px;
     border-radius: 12px;
-    padding: 20px;
-    margin: 16px;
+    color: #000;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
 }
 
 .projects .header {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    margin-bottom: 12px;
 }
 
 .projects .header h2 {
     font-size: 1.5em;
-    color: steelblue;
-    margin: 0;
+    color: #1e3a8a;
 }
 
 .projects .header i {
-    color: steelblue;
     font-size: 1.2em;
-    margin-left: 12px;
+    color: #1e3a8a;
     transition: 0.3s;
 }
 
@@ -231,14 +203,12 @@ section {
 
 .projects .card p {
     text-align: left;
-    margin-top: 10px;
     font-size: 1em;
-    font-weight: 500;
-    color: black;
+    color: #222;
 }
 
 .projects .images {
-    margin-top: 15px;
+    margin-top: 16px;
     display: flex;
     flex-wrap: wrap;
     gap: 12px;
@@ -247,167 +217,124 @@ section {
 
 .projects .images img {
     width: 160px;
-    height: auto;
     border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
+    transition: 0.3s ease;
 }
 
 .projects .images img:hover {
     transform: scale(1.05);
 }
 
-/* --------------------contact section-------------------- */
+/* --------------------Contact Section-------------------- */
 .contact {
-    background-color: white;
-    min-height: 100vh;
-    padding: 40px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-color: #fefefe;
+    padding: 80px 0;
     text-align: center;
 }
 
 .contact .title {
-    display: flex;
-    justify-content: center;
-    color: steelblue;
-    font-weight: 900;
     font-size: 3em;
-    margin-bottom: 30px;
+    color: #1e3a8a;
+    font-weight: 800;
+    margin-bottom: 40px;
 }
 
 .contact .content {
     display: flex;
-    justify-content: center;
-    flex-direction: row;
     flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
 }
 
 .contact .card {
-    background-color: white;
-    width: 28em;
-    box-shadow: 0 5px 25px rgba(1, 1, 1, 0.40);
+    background: #fff;
+    width: 300px;
+    padding: 24px;
     border-radius: 12px;
-    padding: 20px;
-    margin: 16px;
-    transition: 0.7s ease;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    transition: 0.4s;
 }
 
 .contact .card:hover {
-    transform: scale(1.1);
+    transform: translateY(-10px);
 }
 
 .contact .icon {
-    display: flex;
-    justify-content: center;
-    font-size: 8em;
-    color: steelblue;
-    padding-bottom: 12px;
+    font-size: 3em;
+    color: #1e3a8a;
+    margin-bottom: 12px;
 }
 
-/* --------------------footer-------------------- */
+/* --------------------Footer-------------------- */
 footer {
+    background: #111;
     color: white;
-    background-color: black;
-    width: 100%;
-    z-index: 999;
+    padding: 20px 8%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    padding: 8px 8px;
     align-items: center;
-
 }
 
 footer h1 {
     font-size: 1em;
-    font-weight: 300;
 }
 
 footer span {
-    color: steelblue;
+    color: #1e3a8a;
 }
 
 footer .social-icons a {
     color: white;
+    margin-left: 16px;
+    font-size: 1.2em;
     transition: 0.3s;
 }
 
-footer .social-icons i:hover {
+footer .social-icons a:hover {
     color: #601cfc;
     transform: scale(1.2);
 }
 
+/* --------------------Responsive Design-------------------- */
 @media (max-width: 768px) {
     header {
         flex-direction: column;
         align-items: flex-start;
-        padding: 12px 20px;
+        padding: 16px;
     }
 
     .navigation {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 12px;
         margin-top: 10px;
     }
 
     .main {
         flex-direction: column;
-        padding: 100px 20px 20px;
+        padding: 120px 16px 40px;
         text-align: center;
     }
 
-    .main h1,
-    .main h2 {
-        font-size: 1.2em;
+    .main h1 span {
+        font-size: 2em;
     }
 
-    .main h1 span {
+    .main h2 {
         font-size: 1.5em;
     }
 
-    .main-button {
-        padding: 0.5em 2em;
-        font-size: 1em;
-    }
-
-    .main .social-icons {
-        justify-content: center;
-        margin-top: 10px;
-    }
-
-    .services .content,
-    .projects .content,
-    .contact .content {
-        flex-direction: column;
-        align-items: center;
-        padding: 0 16px;
-    }
-
-    .services .card,
     .projects .card,
+    .services .card,
     .contact .card {
         width: 90%;
-        margin: 12px 0;
-    }
-
-    .projects .images {
-        flex-direction: column;
-        align-items: center;
     }
 
     .projects .images img {
-        width: 80%;
+        width: 90%;
     }
 
     footer {
         flex-direction: column;
-        text-align: center;
         gap: 12px;
-    }
-
-    footer h1 {
-        font-size: 0.9em;
+        text-align: center;
     }
 }
