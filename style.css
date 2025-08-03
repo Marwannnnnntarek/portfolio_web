@@ -192,6 +192,7 @@ header {
 }
 
 .projects .header i {
+    padding-right: 30px;
     font-size: 1.2em;
     color: #1e3a8a;
     transition: 0.3s;
