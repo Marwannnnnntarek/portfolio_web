@@ -96,6 +96,81 @@ header {
     transform: scale(1.2);
 }
 
+/* --------------------About me Section-------------------- */
+.about {
+    background-color: #fefefe;
+    padding: 80px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.about .container {
+    width: 80%;
+    max-width: 1000px;
+}
+
+.about .title {
+    font-size: 3em;
+    color: #1e3a8a;
+    font-weight: 800;
+    margin-bottom: 40px;
+}
+
+.about .content p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    color: #444;
+}
+
+/* --------------------Skills Section-------------------- */
+.skills {
+    background-color: #111;
+    color: white;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.skills .title {
+    font-size: 3em;
+    color: #1e3a8a;
+    font-weight: 800;
+    margin-bottom: 40px;
+}
+
+.skill-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 120px;
+    font-size: 1em;
+    color: white;
+    transition: transform 0.3s;
+}
+
+.skill i {
+    font-size: 3em;
+    margin-bottom: 10px;
+    color: #1e3a8a;
+}
+
+.skill span {
+    font-size: 1em;
+}
+
+.skill:hover {
+    transform: scale(1.1);
+}
+
+
 /* --------------------Services Section-------------------- */
 .services {
     background-color: #fefefe;
