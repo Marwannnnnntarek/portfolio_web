@@ -1,7 +1,13 @@
+/* px -> relative to nothing, best used for exact sizes, ex font size: 16px
+   em -> relative to parent's font size, best used for text-padding-spacing, ex font size: 1.5em
+   % -> relative to parent's diminsion, best used for width and height, ex width: 80%
+*/
+
 * {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
+    /* the padding and border are included in the total width and height. */
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
@@ -28,6 +34,7 @@ header h1 {
 }
 
 .navigation a {
+
     text-decoration: none;
     color: #1e3a8a;
     font-weight: 500;
@@ -48,7 +55,7 @@ header h1 {
     color: white;
     display: flex;
     align-items: center;
-    padding: 0 8%;
+    justify-content: center;
 }
 
 .main h1 {
