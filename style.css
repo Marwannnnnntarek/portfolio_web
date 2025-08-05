@@ -8,14 +8,15 @@
 
 /* --------------------Header-------------------- */
 header {
+    display: flex;
     align-items: center;
     background-color: #f8f8f8;
     position: fixed;
     width: 100%;
+    /* keep header above all contents */
     z-index: 999;
-    display: flex;
     justify-content: space-between;
-    padding: 12px 8%;
+    padding: 0.75em 8%;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
@@ -32,10 +33,12 @@ header h1 {
     font-weight: 500;
     margin-left: 20px;
     transition: 0.3s;
+    cursor: pointer;
 }
 
 .navigation a:hover {
     color: #601cfc;
+    text-decoration: underline;
 }
 
 /* --------------------main section-------------------- */
